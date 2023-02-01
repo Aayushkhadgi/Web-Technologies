@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300&display=swap');
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
 body{
     overflow: hidden;
 }
-
 .hero{
     height: 110vh;
     width: 100%;
@@ -69,19 +68,25 @@ span3{
     display: flex;
     align-items: center;
 }
-  .navbar a{
+  .sidebar a{
     background-color: #333;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
     margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
   }
-  .navbar a:hover {
+  .sidebar a:hover {
     transform: scale(1.5);
     background-color: white;
-    transition: 4s;
+    color: #f9004d;
+    transition: 3s;
     border-radius: 0 30px;
-  }
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+}
 .content{
     position: absolute;
     top:50%;
@@ -89,20 +94,21 @@ span3{
     transform:translateY(-50%) ;
 }
 .content:before{
-    position:absolute;
+    position: absolute;
     content: '';
     height: 233px;
     width: 240px;
     border-radius: 50%;
     left:-12%;
     top: -10%;
-    opacity: 55%;
+    opacity: 100%;
+    z-index: -1;
     background: linear-gradient(180deg,#7f00ff,pink);
     animation: object1 6s linear infinite;
     -webkit-animation: object1 6s linear infinite;
 }
 .content::after{
-    position:absolute;
+    position: absolute;
     content: '';
    height: 200px;
     width: 200px;
@@ -111,8 +117,8 @@ span3{
     top: -89%;
     background: linear-gradient(45deg,#7f00ff,pink);
     animation: object1 6s linear infinite;
-    z-index: 5;
-    opacity: 60%;
+    z-index: -1;
+    opacity: 100%;
 }
 @keyframes object1 {
     50%{
@@ -124,7 +130,6 @@ span3{
     width: 50%;
 }
 .cols0{
-    z-index: 5;
     width: 50%;
 }
 h3{
@@ -171,6 +176,7 @@ h4 span{
 .about img{
     height: auto;
     width: 430px;
+    border-radius: 132px;
 }
 .about-text{
     width: 550px;
@@ -208,4 +214,24 @@ h4 span{
     line-height: 28px;
     font-size:18px;
     margin-bottom: 45px;
+}
+.about a{
+    display: flex;
+    text-decoration: none;
+    margin: 10px 249px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    padding-top: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.about a:hover{
+    transform: scale(1.3);
+    transition: 4s;
+    color: #f9004d;
 }
