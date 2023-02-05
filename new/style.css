@@ -45,7 +45,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #fff;
+    background: #b3b3b3;
     transform: translateX(-50%);
 }
 .navbar{
@@ -133,7 +133,7 @@ section .title::before{
 }
 .home{
     display: flex;
-    background: url("aa.jpg") no-repeat center;
+    background: url("a.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -218,6 +218,62 @@ section .title::before{
 }
 .about .about-content .right p{
     text-align: justify;
+    color: #fff;
+    word-spacing: 1px;
+}
+.Hobbies{
+    background-color: #111;
+}
+.Hobbies .title{
+    color: #b3b3b3;
+}
+.Hobbies .cover .card{
+    border-radius: 6px;
+    color: white;
+    padding: 50px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.Hobbies .cover .card:hover{
+    background: #f9004d;
+    color: white;
+}
+.Hobbies .cover .card .box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.Hobbies .cover .card:hover .box{
+    transform: scale(1.05);
+}
+.Hobbies.cover .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    display: flex;
+    align-items: center;
+}
+.Hobbies .cover .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.Hobbies .cover .card:hover img{
+    border-color: #fff;
+}
+.Hobbies .cover .card .box .text{
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: bolder;
+    color: #f9004d;
+}
+.Hobbies .cover .card .box:hover .text{
     color: #fff;
 }
 .skills .skills-content .column{
@@ -456,10 +512,6 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -479,9 +531,6 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 20px;
-    }
-    .services .serv-content .card{
-        width: 100%;
     }
 }
 
@@ -515,16 +564,3 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-<section class="about" id="about">
-<div class="main">
-    <img src="ak.jpg">
-    <div class="about-text">
-    <h2>About <span>me</span></h2>
-    <h5><span>Developer </span>& Designer</h5>
-    <p>"I am currently in the process of obtaining my Bachelor's degree in Computer Science at Herald College Kathmandu,
-        where I have gained a comprehensive understanding of various programming languages and software development techniques.
-        I have little experience in web development and have completed several projects as part of my coursework.
-        I am always eager to learn new technologies and programming languages and am confident in my ability to adapt quickly to new challenges."
-</div>
-</div>
-</section>
