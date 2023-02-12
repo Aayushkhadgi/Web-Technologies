@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -17,9 +15,6 @@ section{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-}
-.about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .skills .skills-content,
@@ -50,14 +45,14 @@ section .title::before{
 }
 .navbar{
     position: fixed;
-    width: 100%;
     z-index: 999;
+    width: 100%;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 15px ;
     background: black;
 }
 .navbar .max-width{
@@ -98,7 +93,6 @@ section .title::before{
 .navbar.sticky .menu li a:hover{
     color: #f9004d;
 }
-
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -129,11 +123,12 @@ section .title::before{
     pointer-events: auto;
 }
 .scroll-up-btn:hover{
-    filter: brightness(90%);
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
 }
 .home{
     display: flex;
-    background: url("a.jpg") no-repeat center;
+    background: url("ab.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -199,10 +194,6 @@ section .title::before{
     width: 400px;
     object-fit: cover;
     border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
 }
 .about .about-content .right{
     width: 55%;
@@ -246,8 +237,9 @@ section .title::before{
     justify-content: center;
     transition: all 0.3s ease;
 }
-.Hobbies .cover .card:hover .box{
+.Hobbies .cover .card:hover .box .text{
     transform: scale(1.05);
+    color: #fff;
 }
 .Hobbies.cover .card .text{
     font-size: 25px;
@@ -272,9 +264,6 @@ section .title::before{
     padding-bottom: 50px;
     font-weight: bolder;
     color: #f9004d;
-}
-.Hobbies .cover .card .box:hover .text{
-    color: #fff;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -446,17 +435,8 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-@media (max-width: 1104px) {
-    .about .about-content .left img{
-        height: 350px;
-        width: 350px;
-    }
-}
-
-@media (max-width: 991px) {
-    .max-width{
-        padding: 0 50px;
-    }
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -518,22 +498,6 @@ footer span a:hover{
         margin-bottom: 35px;
     }
 }
-
-@media (max-width: 690px) {
-    .max-width{
-        padding: 0 23px;
-    }
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
-    }
-}
-
 @media (max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;

@@ -19,7 +19,6 @@ $(document).ready(function(){
     $('.navbar .menu li a').click(function(){
         $('html').css("scrollBehavior", "smooth");
     });
-
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
@@ -28,14 +27,14 @@ $(document).ready(function(){
         strings : ["coder","gamer","developer","designer"],
         typeSpeed: 50,
             loop: true,
-            backDelay: 900,
+            backDelay: 1000,
             backSpeed: 30,
     });
     var typingEffect = new Typed(".typod",{
-        strings: ["khadgi", "Khadgi"],
+        strings: ["Khadgi","Khadgi"],
         typeSpeed: 50,
         loop: true,
         backDelay: 1000,
         backSpeed: 30,
-    })
+    });
 });
